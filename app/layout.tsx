@@ -1,7 +1,7 @@
 import { RootProvider } from "fumadocs-ui/provider/next";
 import { Inter } from "next/font/google";
 import { Toaster } from "sonner";
-import SearchDialog from "@/components/search-dialog";
+import SearchDialog from "@/components/search";
 import { SiteHeader } from "@/components/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 
