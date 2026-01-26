@@ -12,6 +12,7 @@ import {
   type SharedProps,
 } from "fumadocs-ui/components/dialog/search";
 import { useI18n } from "fumadocs-ui/contexts/i18n";
+import { SearchIcon } from "lucide-react";
 import { Kbd } from "@/components/ui/kbd";
 
 const searchDialogItems = [
@@ -38,36 +39,7 @@ export default function DefaultSearchDialog(props: SharedProps) {
       <SearchDialogOverlay />
       <SearchDialogContent className="fixed top-20 left-1/2 -translate-x-1/2 bg-background md:top-[15%]">
         <SearchDialogHeader>
-          <svg
-            aria-label="search text-muted-foreground"
-            className="size-10"
-            fill="currentColor"
-            stroke="currentColor"
-            strokeWidth="0.25"
-            viewBox="0 0 256 256"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Search</title>
-            <rect height="14" rx="1" width="14" x="88" y="56" />
-            <rect height="14" rx="1" width="14" x="72" y="72" />
-            <rect height="14" rx="1" width="14" x="56" y="88" />
-            <rect height="14" rx="1" width="14" x="56" y="104" />
-            <rect height="14" rx="1" width="14" x="56" y="120" />
-            <rect height="14" rx="1" width="14" x="72" y="136" />
-            <rect height="14" rx="1" width="14" x="88" y="152" />
-            <rect height="14" rx="1" width="14" x="104" y="152" />
-            <rect height="14" rx="1" width="14" x="120" y="152" />
-            <rect height="14" rx="1" width="14" x="136" y="136" />
-            <rect height="14" rx="1" width="14" x="152" y="120" />
-            <rect height="14" rx="1" width="14" x="152" y="104" />
-            <rect height="14" rx="1" width="14" x="152" y="88" />
-            <rect height="14" rx="1" width="14" x="136" y="72" />
-            <rect height="14" rx="1" width="14" x="120" y="56" />
-            <rect height="14" rx="1" width="14" x="104" y="56" />
-            <rect height="14" rx="1" width="14" x="152" y="152" />
-            <rect height="14" rx="1" width="14" x="168" y="168" />
-            <rect height="14" rx="1" width="14" x="184" y="184" />
-          </svg>
+          <SearchIcon />
           <SearchDialogInput />
           <SearchDialogClose>
             <Kbd>ESC</Kbd>
