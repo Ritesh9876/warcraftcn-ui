@@ -1,8 +1,11 @@
 import Link from "next/link";
+import { Suspense } from "react";
+import { Button } from "@/components/ui/button";
 import { navItems } from "@/config/nav-items";
 import MobileNav from "./mobile-nav";
 import { ModeSwitcher } from "./mode-switcher";
 import { SearchDocumentation } from "./search-documentation";
+import { Skeleton } from "./ui/skeleton";
 
 export function SiteHeader() {
   return (
@@ -31,7 +34,7 @@ export function SiteHeader() {
         <div className="flex min-w-0 shrink-0 items-center gap-2 md:ml-auto">
           <SearchDocumentation />
 
-          {/* <Link
+          <Link
             href="https://github.com/TheOrcDev/warcraftcn-ui"
             target="_blank"
           >
@@ -48,7 +51,7 @@ export function SiteHeader() {
                 <StarsCount />
               </Suspense>
             </Button>
-          </Link> */}
+          </Link>
           <ModeSwitcher />
         </div>
       </div>
