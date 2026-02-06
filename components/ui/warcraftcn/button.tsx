@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 import bgImage from "./assets/button-bg.webp";
 import bgWithFrameImage from "./assets/button-bg-with-frame.webp";
-import bgWithFrameImageSm from "./assets/button-bg-with-frame-sm.png";
+import bgWithFrameImageSm from "./assets/button-bg-with-frame-sm.webp";
 import bgImageSm from "./assets/button-bg-sm.webp";
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
