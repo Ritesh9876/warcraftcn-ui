@@ -4,11 +4,6 @@ import type * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-import bgImage from "./assets/button-bg.webp";
-import bgWithFrameImage from "./assets/button-bg-with-frame.webp";
-import bgWithFrameImageSm from "./assets/button-bg-with-frame-sm.webp";
-import bgImageSm from "./assets/button-bg-sm.webp";
-
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
 const buttonVariants = cva(
@@ -46,13 +41,14 @@ function Button({
     asChild?: boolean;
   }) {
   const Comp = asChild ? Slot : "button";
-  const bgUrl = () => {
-    if (variant === "frame") {
-      return size === "sm" ? bgWithFrameImageSm.src : bgWithFrameImage.src;
-    }
-
-    return size === "sm" ? bgImageSm.src : bgImage.src;
-  }
+  const bgClass =
+    variant === "frame"
+      ? size === "sm"
+        ? "wc-btn-bg-frame-sm"
+        : "wc-btn-bg-frame"
+      : size === "sm"
+      ? "wc-btn-bg-sm"
+      : "wc-btn-bg";
 
   const sizeClass = () => {
 
@@ -61,12 +57,16 @@ function Button({
     }
     return size === "sm" ? "w-60 h-17" : "w-104 h-16";
   }
-  const sizeClassStyle = { [sizeClass()]: true };
 
   return(
     <Comp
-      className={cn(buttonVariants({ variant, size }), className, sizeClassStyle)}
-      style={{ backgroundImage: `url(${bgUrl()})`, ...style }}
+      className={cn(
+        buttonVariants({ variant, size }),
+        bgClass,
+        sizeClass(),
+        className
+      )}
+      style={style}
       data-slot="button"
       {...props}
     />

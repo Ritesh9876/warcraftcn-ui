@@ -5,3 +5,27 @@
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
+
+.wc-btn-bg {
+  background-image: url("/warcraftcn/button-bg.webp");
+}
+
+.wc-btn-bg-sm {
+  background-image: url("/warcraftcn/button-bg-sm.webp");
+}
+
+.wc-btn-bg-frame {
+  background-image: url("/warcraftcn/button-bg-with-frame.webp");
+}
+
+.wc-btn-bg-frame-sm {
+  background-image: url("/warcraftcn/button-bg-with-frame-sm.webp");
+}
+
+.wc-card-bg {
+  background-image: url("/warcraftcn/card-bg.webp");
+}
+
+.wc-input-bg {
+  background-image: url("/warcraftcn/input-frame.webp");
+}

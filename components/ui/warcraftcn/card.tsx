@@ -3,7 +3,6 @@ import * as React from "react"
 import { cn } from "@/lib/utils"
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
-import bgImage from "./assets/card-bg.webp";
 
 function Card({
   className,
@@ -14,8 +13,10 @@ function Card({
     <div
       data-slot="card"
       data-size={size}
-      className={cn("w-136 p-20 h-180 fantasy text-card-foreground gap-4 overflow-hidden rounded-xl py-4 text-sm has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col", className)}
-      style={{ backgroundImage: `url(${bgImage.src})` }}
+      className={cn(
+        "w-136 p-20 h-180 fantasy text-card-foreground gap-4 overflow-hidden rounded-xl py-4 text-sm has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:gap-3 data-[size=sm]:py-3 data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl group/card flex flex-col wc-card-bg",
+        className
+      )}
       {...props}
     />
   )
