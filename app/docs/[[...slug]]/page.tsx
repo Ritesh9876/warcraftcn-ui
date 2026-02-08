@@ -20,8 +20,8 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
   const MDX = page.data.body;
   const neighbours = findNeighbour(source.pageTree, page.url);
   const gitConfig = {
-    user: "username",
-    repo: "repo",
+    user: "TheOrcDev",
+    repo: "warcraftcn-ui",
     branch: "main",
   };
 
@@ -43,7 +43,7 @@ export default async function Page(props: PageProps<"/docs/[[...slug]]">) {
         <div className="mb-6 flex flex-row items-center gap-2 border-b py-4">
           <LLMCopyButton markdownUrl={`${page.url}.mdx`} />
           <ViewOptions
-            githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/docs/content/docs/${page.path}`}
+            githubUrl={`https://github.com/${gitConfig.user}/${gitConfig.repo}/blob/${gitConfig.branch}/content/docs/${page.path}`}
             markdownUrl={`${page.url}.mdx`}
           />
         </div>
