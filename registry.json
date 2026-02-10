@@ -89,6 +89,30 @@
           "target": "components/ui/warcraftcn/assets/card-bg.webp"
         }
       ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:component",
+      "title": "Warcraft Badge",
+      "description": "A Warcraft-themed badge component with fantasy styling",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/badge.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/badge.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/badge-bg.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/badge-bg.webp"
+        }
+      ]
     }
   ]
 }
