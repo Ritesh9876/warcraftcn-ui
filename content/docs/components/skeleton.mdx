@@ -1,6 +1,6 @@
 ---
 title: Skeleton
-description: A Warcraft-themed skeleton/loading placeholder with faction variants and shimmer animation.
+description: A Warcraft-themed skeleton/loading placeholder with faction themes and shimmer animation.
 ---
 
 import { Skeleton } from "@/components/ui/warcraftcn/skeleton";
@@ -69,7 +69,17 @@ import { Skeleton } from "@/components/ui/warcraftcn/skeleton";
 <Skeleton className="h-12 w-full" />;
 ```
 
-## Faction Variants
+## Shapes
+
+```tsx
+// Default rectangular shape
+<Skeleton className="h-12 w-full" />
+
+// Circular shape (for avatars)
+<Skeleton variant="circular" className="size-12" />
+```
+
+## Factions
 
 ```tsx
 // Orc - red/brown with axe icons

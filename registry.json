@@ -94,7 +94,7 @@
       "name": "skeleton",
       "type": "registry:component",
       "title": "Warcraft Skeleton",
-      "description": "A Warcraft-themed skeleton/loading placeholder with faction variants (orc, elf, human, undead) and shimmer animation",
+      "description": "A Warcraft-themed skeleton/loading placeholder with faction themes (orc, elf, human, undead) and shimmer animation",
       "registryDependencies": [],
       "files": [
         {
