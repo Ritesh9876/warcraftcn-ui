@@ -1,0 +1,35 @@
+---
+title: Textarea
+description: A Warcraft III styled textarea component.
+---
+
+import { Textarea } from "@/components/ui/warcraftcn/textarea";
+
+## Standard
+
+<Textarea
+  className="max-w-sm"
+  rows="10"
+  placeholder="Enter your message to the Warchief..."
+/>
+
+## With Default Value
+
+<Textarea
+  className="max-w-sm"
+  defaultValue="For the Horde! Our forces are ready to march on command."
+/>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/textarea.json
+```
+
+## Usage
+
+```tsx
+import { Textarea } from "@/components/ui/warcraftcn/textarea";
+
+<Textarea className="max-w-sm" rows="10" placeholder="Enter text..." />;
+```

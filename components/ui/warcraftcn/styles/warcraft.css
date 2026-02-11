@@ -34,6 +34,10 @@
   background-image: url("https://warcraftcn.com/warcraftcn/dropdown-menu-bg.webp");
 }
 
+.wc-textarea-bg {
+  background-image: url("https://warcraftcn.com/warcraftcn/textarea.png");
+}
+
 .wc-dropdown-menu-bg {
   background-image: url("https://warcraftcn.com/warcraftcn/dropdown-menu-bg.webp");
 }

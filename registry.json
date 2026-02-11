@@ -144,8 +144,13 @@
       "title": "Warcraft Dropdown Menu",
       "description": "A Warcraft-themed dropdown menu component with fantasy styling and border-image frames",
       "dependencies": ["radix-ui", "lucide-react"],
-      "registryDependencies": ["dropdown-menu"],
+      "registryDependencies": [],
       "files": [
+        {
+          "path": "components/ui/warcraftcn/dropdown-menu.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/dropdown-menu.tsx"
+        },
         {
           "path": "components/ui/warcraftcn/styles/warcraft.css",
           "type": "registry:component",
@@ -155,6 +160,30 @@
           "path": "components/ui/warcraftcn/assets/dropdown-menu-bg.webp",
           "type": "registry:file",
           "target": "components/ui/warcraftcn/assets/dropdown-menu-bg.webp"
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:component",
+      "title": "Warcraft Textarea",
+      "description": "A Warcraft-themed textarea component with fantasy styling",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/textarea.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/textarea.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/textarea-bg.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/textarea-bg.webp"
         }
       ]
     }
