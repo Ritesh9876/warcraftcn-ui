@@ -9,6 +9,7 @@
     "dropdown-menu",
     "input",
     "skeleton",
-    "textarea"
+    "textarea",
+    "tooltip"
   ]
 }

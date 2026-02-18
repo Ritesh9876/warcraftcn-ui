@@ -230,6 +230,26 @@
           "target": "components/ui/warcraftcn/assets/avatar-undead.webp"
         }
       ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:component",
+      "title": "Warcraft Tooltip",
+      "description": "A Warcraft-themed tooltip component with item-quality rarity variants (default, uncommon, rare, epic, legendary) and side positioning support",
+      "dependencies": ["radix-ui"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/tooltip.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        }
+      ]
     }
   ]
 }
