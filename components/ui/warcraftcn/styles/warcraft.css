@@ -476,6 +476,24 @@
   }
 }
 
+@keyframes wc-accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes wc-accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
 .wc-accordion-content-border {
   border-image-source: url("../assets/accordion-content-bg.webp");
 }
