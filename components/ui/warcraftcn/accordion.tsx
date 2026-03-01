@@ -72,7 +72,7 @@ function AccordionTrigger({
       className={cn(
         "flex",
 
-        "border-solid wc-accrodion-header-border [border-image-repeat:stretch]",
+        "border-solid wc-accordion-header-border [border-image-repeat:stretch]",
         "border-6 [border-image-slice:16_fill]",
         "bg-cover bg-center bg-no-repeat",
         "m-0 mt-0 mb-0 min-h-14",
