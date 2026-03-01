@@ -122,7 +122,7 @@ function AccordionContent({
         "overflow-hidden text-sm will-change-[height,opacity,filter]",
         "transition-[filter] duration-300 ease-out",
 
-        "wc-accordion-scroll-content data-[state=open]:animate-fd-accordion-down data-[state=closed]:animate-fd-accordion-up",
+        "wc-accordion-scroll-content data-[state=open]:animate-[wc-accordion-down_200ms_ease-out] data-[state=closed]:animate-[wc-accordion-up_200ms_ease-out]",
 
         "border-solid wc-accordion-content-border [border-image-repeat:stretch]",
         "border-0 [border-image-slice:16_fill]",
